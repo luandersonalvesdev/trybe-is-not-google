@@ -20,7 +20,9 @@ def remove(instance):
     if not len(instance):
         return sys.stdout.write('Não há elementos\n')
     removed_file = instance.dequeue()
-    sys.stdout.write(f'Arquivo {removed_file["nome_do_arquivo"]} removido com sucesso\n')
+    sys.stdout.write(
+        f'Arquivo {removed_file["nome_do_arquivo"]} removido com sucesso\n'
+    )
 
 
 def file_metadata(instance, position):
