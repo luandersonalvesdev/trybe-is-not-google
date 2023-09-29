@@ -20,3 +20,6 @@ class Queue(AbstractQueue):
         if index > (len(self._data) - 1) or index < 0:
             raise IndexError('Índice Inválido ou Inexistente')
         return self._data[index]
+
+    def __iter__(self):
+        return iter(self._data)
